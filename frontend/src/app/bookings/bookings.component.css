@@ -1,0 +1,12 @@
+.card{
+    background-color: lightgrey;
+  width: 250px;
+  border: 5px solid rgb(2, 66, 17);
+  padding: 20px;
+  margin: 20px;
+  display:inline-block;
+  box-shadow: 0 8px 8px 0 rgba(3, 123, 1, 0.2), 0 20px 20px 0 rgba(22, 114, 1, 0.19) inset;
+}
+h1{
+  color:white;
+}

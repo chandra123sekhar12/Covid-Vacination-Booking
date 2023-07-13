@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body [ngStyle]="{'background' : 'url(../../assets/bg6.jpg)','background-repeat': 'no-repeat','background-size':'cover','background-attachment':'fixed'}">
+    <h1 align="center">All Booking Details</h1>
+    <div class="card" *ngFor="let booking of bookings;">
+        Name:{{booking.name}}<br>
+        Aadhar Number:{{booking.aadharnumber}}<br>
+        Phone Number:{{booking.phonenumber}}<br>
+        centername:{{booking.centername}}<br>
+        vaccine:{{booking.vaccine}}<br>
+        dosage:{{booking.dosage}}
+    </div>
+    
+</body>

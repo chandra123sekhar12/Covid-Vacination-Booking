@@ -1,0 +1,44 @@
+<body [ngStyle]="{'background' : 'url(../../assets/bg8.jpg)','background-repeat': 'no-repeat','background-size':'cover','background-attachment':'fixed'}">
+<div class="container">
+    <form>
+      <h1>Slot Booking Form</h1>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  [(ngModel)]="booking.name" required>
+      </div>
+      <div class="form-group">
+        <label for="aadhar">Aadhar number:</label>
+        <input type="text" id="aadhar" name="aadhar"  [(ngModel)]="booking.aadharnumber" required>
+      </div>
+      <div class="form-group">
+        <label for="phone number">phone number:</label>
+        <input type="tel" id="phonenumber" name="phone number" [(ngModel)]="booking.phonenumber" required>
+      </div>
+      <div class="form-group">
+        <label for="centername">center name:</label>
+        <input type="text" id="centername" name="centername" [(ngModel)]="booking.centername" required>
+      </div>
+      <div class="form-group">
+        <p> vaccine :</p>
+        <input type="radio" id="covishield" name="vaccine" value="covishield" [(ngModel)]="booking.vaccine" >
+        <label for="covishield">covishield</label>&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="covaccine" name="vaccine" value="covaccine" [(ngModel)]="booking.vaccine">
+        <label for="covaccine">covaccine</label><br>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <p>Dosage:</p>
+          <input type="radio" id="1stdose" name="dosage" value="1st dose" [(ngModel)]="booking.dosage">
+          <label for="admin">1st Dose</label>&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="2nddose" name="dosage" value="2nd dose" [(ngModel)]="booking.dosage">
+          <label for="user">2nd Dose</label>&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="booster" name="dosage" value="booster" [(ngModel)]="booking.dosage">
+          <label for="user">Booster Dose</label><br>
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="addbooking()">book now</button>
+      </div>
+    </form>
+    </div>
+</body>

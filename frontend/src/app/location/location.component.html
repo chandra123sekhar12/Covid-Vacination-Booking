@@ -1,0 +1,24 @@
+<body [ngStyle]="{'background' : 'url(../../assets/bg9.jpg)','background-repeat': 'no-repeat','background-size':'cover','background-attachment':'fixed'}">
+ 
+  <div class="search-container">
+    <input type="text" placeholder="Search location" class="search-input" [(ngModel)]="location.name">
+    <br>
+    <button (click)="getcenter()">search</button>&nbsp;&nbsp;<br>
+    <button><a href="/hospital">Book Slot</a></button>&nbsp;&nbsp;
+    <button id="logout" (click)="logout()">logout</button>
+</div>
+
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*** Please Kindly Notedown Your Desired Hospital Name For Slot Booking ***</h4>
+  <div>
+    <div class="card" *ngFor="let cen of centers;">
+        Hospital name:{{cen.centername}}<br>
+        Location:{{cen.location}}<br>
+        contact number:{{cen.number}}<br>
+        opening hours:{{cen.timings}}<br>
+        bookings per day: 10 candidates<br>
+      
+        
+    </div>
+    
+    </div>
+</body>

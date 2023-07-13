@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body [ngStyle]="{'background' : 'url(../../assets/bg4.jpg)','background-repeat': 'no-repeat','background-size':'cover','background-attachment':'fixed'}">
+  <div class="container">
+    <form>
+      <h1>Add New Center</h1>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="center.name" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" [(ngModel)]="center.location" required>
+      </div>
+      <div class="form-group">
+        <label for="contact no">contact number:</label>
+        <input type="tel" id="contact no" name="contact no" [(ngModel)]="center.number" required>
+      </div>
+      <div class="form-group">
+        <label for="opening hours">opening hours:</label>
+        <input type="text" id="opening hours" name="opening hours" [(ngModel)]="center.timings" required>
+      </div>
+      
+      <div class="form-group">
+        <button (click)="addcenter()">Add Center</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

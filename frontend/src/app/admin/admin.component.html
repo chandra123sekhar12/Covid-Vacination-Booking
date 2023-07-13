@@ -1,0 +1,15 @@
+<body [ngStyle]="{'background' : 'url(../../assets/bg1.jpg)','background-repeat': 'no-repeat','background-size':'cover','background-attachment':'fixed'}">
+    <div fxLayout="row" fxLayoutAlign="space-evenly center" class="button-container">
+    <div fxLayout="column" fxLayoutAlign="space-between end">
+        <div><button type="button" ><span></span><a href="/add"><span></span>Add Center</a></button></div>
+        <div><button type="button" ><span></span><a href="/delete"><span></span>Remove Center</a></button></div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="space-between end">
+        <div><button type="button" ><span></span><a href="/booking"><span></span>Dosage Details</a></button></div>
+        <div><button type="button" ><span></span><a href="/center"><span></span>All Centers</a></button></div>
+    </div>
+    </div> 
+    <button id="logout" (click)="logout()">logout</button>
+
+    <!-- </div> -->
+</body>

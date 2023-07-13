@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body [ngStyle]="{'background' : 'url(../../assets/bg6.jpg)','background-repeat': 'no-repeat','background-size':'cover','background-attachment':'fixed'}">
+    <div>
+        <h1>All available centers</h1>
+    <div class="card" *ngFor="let cen of centers;">
+        Hospital name:{{cen.centername}}<br>
+        Location:{{cen.location}}<br>
+        contact number:{{cen.number}}<br>
+        opening hours:{{cen.timings}}<br>
+        bookings per day: 10 candidates
+    </div>
+    </div>
+</body>
