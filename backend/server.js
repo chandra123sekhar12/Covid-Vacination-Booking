@@ -2,7 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const app=express();
 var corsOptions={
-    origin:"https://covid-vacination-booking-api.vercel.app"
+    origin:["https://covid-vacination-booking-api.vercel.app"],
+    methods: ["POST","GET"],
+    credentials:true
 };
 app.use(cors(corsOptions));
 app.use(express.json());
